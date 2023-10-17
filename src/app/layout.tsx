@@ -1,9 +1,9 @@
 import Header from '@/partials/Header'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`min-h-screen ${inter.className}`}>
+      <body className={`min-h-screen ${poppins.className}`}>
         <header className="container mx-auto px-16 py-8">
           <Header />
         </header>
