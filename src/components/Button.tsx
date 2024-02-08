@@ -10,12 +10,11 @@ const Button = ({ variant = 'solid', ...props }: ButtonProps, ref: ButtonRef) =>
   <button ref={ref} className={`${className.base} ${className[variant]}`} {...props} />
 )
 
-const className = {
-  base: 'rounded-full px-6 py-2 text-[20px] font-semibold',
-  solid: 'bg-lime-500 text-white active:bg-lime-400 hover:bg-lime-600',
-  outline:
-    'text-lime-500 outline-2 -outline-offset-2 outline-lime-500 outline active:text-lime-400 active:outline-lime-400 hover:text-lime-600 hover:outline-lime-600',
-  link: 'text-lime-500 active:text-lime-400 hover:text-lime-600',
-}
-
 export default forwardRef(Button)
+
+const className = {
+  base: 'rounded-full border-2 px-5 py-1 text-lg font-semibold',
+  solid: 'border-primary bg-primary text-on-primary hover:opacity-85',
+  outline: 'border-primary text-primary hover:opacity-85',
+  link: 'border-transparent text-primary hover:opacity-85',
+}
