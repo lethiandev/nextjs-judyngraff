@@ -12,7 +12,7 @@ const NavigationLink = ({ children, ...props }: NavigationLinkProps) => {
 
   return (
     <Link className={`group mx-4 ${isActive ? 'is-active' : ''}`} {...props}>
-      <span className="font-semibold text-white group-[.is-active]:text-lime-500">{children}</span>
+      <span className="group-[.is-active]:text-primary font-semibold">{children}</span>
     </Link>
   )
 }
