@@ -1,6 +1,5 @@
 import Avatar from '@/components/Avatar'
-import Button from '@/components/Button'
-import PanelBox from '@/components/PanelBox'
+import { PortfolioList } from '@/features/portfolio'
 import { ServiceList } from '@/features/services'
 import Image from 'next/image'
 
@@ -9,7 +8,7 @@ export default function Home() {
     <main className="container mx-auto flex flex-col">
       <HomeTitle />
       <ServiceList />
-      <Portfolio />
+      <PortfolioList />
     </main>
   )
 }
@@ -37,26 +36,4 @@ const HomeTitle = () => (
       <div></div>
     </div>
   </div>
-)
-
-const Portfolio = () => (
-  <PanelBox variant="light">
-    <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-      <h3 className="text-5xl font-semibold text-black">
-        My <span className="text-lime-500">Portfolio</span>
-      </h3>
-      <div className="flex justify-end gap-4">
-        <Button>See More</Button>
-        <Button variant="outline">See More</Button>
-        <Button variant="link">See More</Button>
-      </div>
-    </div>
-    <hr className="my-8 border-zinc-300" />
-    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-      {/* <PanelService label="Web Design" src="/services/web-design.jpg" color="#DDA17C" />
-      <PanelService label="Mobile App Design" src="/services/mobile-app.jpg" color="#417EAA" />
-      <PanelService label="Brand Identity" src="/services/brand-identity.jpg" color="#407757" />
-      <PanelService label="Custom Clothing" src="/services/custom-clothing.jpg" color="#B25F47" /> */}
-    </div>
-  </PanelBox>
 )
