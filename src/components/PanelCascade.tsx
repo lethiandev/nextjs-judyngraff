@@ -5,7 +5,7 @@ export type PanelCascadeProps = PropsWithChildren<{
 }>
 
 const PanelCascade = ({ color, children }: PanelCascadeProps) => (
-  <div className="relative -m-6 mt-0">
+  <div className="relative mt-6">
     <div
       className="absolute -top-6 h-full w-full origin-top scale-90 rounded-[32px] opacity-25"
       style={{ backgroundColor: color }}
