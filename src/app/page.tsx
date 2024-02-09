@@ -1,39 +1,18 @@
 import Avatar from '@/components/Avatar'
 import Button from '@/components/Button'
 import PanelBox from '@/components/PanelBox'
-import PanelService from '@/components/PanelService'
+import { ServiceList } from '@/features/services'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="container mx-auto flex flex-col">
       <HomeTitle />
-      <Services />
+      <ServiceList />
       <Portfolio />
     </main>
   )
 }
-
-const Services = () => (
-  <PanelBox>
-    <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-      <h3 className="text-5xl font-semibold text-white">
-        My <span className="text-lime-500">Services</span>
-      </h3>
-      <p className="text-white">
-        Below are some of my services, to see all the services available,{' '}
-        <span className="text-lime-500">please visit the services section.</span>
-      </p>
-    </div>
-    <hr className="my-8 border-neutral-700" />
-    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-      <PanelService label="Web Design" src="/services/web-design.jpg" color="#DDA17C" />
-      <PanelService label="Mobile App Design" src="/services/mobile-app.jpg" color="#417EAA" />
-      <PanelService label="Brand Identity" src="/services/brand-identity.jpg" color="#407757" />
-      <PanelService label="Custom Clothing" src="/services/custom-clothing.jpg" color="#B25F47" />
-    </div>
-  </PanelBox>
-)
 
 const HomeTitle = () => (
   <div className="flex flex-col items-stretch px-16">
@@ -74,10 +53,10 @@ const Portfolio = () => (
     </div>
     <hr className="my-8 border-zinc-300" />
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-      <PanelService label="Web Design" src="/services/web-design.jpg" color="#DDA17C" />
+      {/* <PanelService label="Web Design" src="/services/web-design.jpg" color="#DDA17C" />
       <PanelService label="Mobile App Design" src="/services/mobile-app.jpg" color="#417EAA" />
       <PanelService label="Brand Identity" src="/services/brand-identity.jpg" color="#407757" />
-      <PanelService label="Custom Clothing" src="/services/custom-clothing.jpg" color="#B25F47" />
+      <PanelService label="Custom Clothing" src="/services/custom-clothing.jpg" color="#B25F47" /> */}
     </div>
   </PanelBox>
 )

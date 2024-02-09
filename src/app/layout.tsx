@@ -14,10 +14,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`min-h-screen ${poppins.className}`}>
-        <header className="container mx-auto px-16 py-8">
-          <Header />
-        </header>
-        {children}
+        <div className="container mx-auto px-16 py-8">
+          <header>
+            <Header />
+          </header>
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   )
