@@ -24,7 +24,7 @@ export const ServiceList = ({ services = defaultServices }: ServiceListProps) =>
         <span className="text-primary">please visit the services section.</span>
       </p>
     </div>
-    <hr className="my-8 border-surface-variant" />
+    <hr className="my-8 border-on-surface opacity-10" />
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
       {services.map((service, index) => (
         <ServiceListCard key={index} service={service} />
