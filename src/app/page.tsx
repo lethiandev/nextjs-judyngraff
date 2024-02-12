@@ -1,15 +1,17 @@
 import Avatar from '@/components/Avatar'
+import { ExperienceTimeline } from '@/features/experience'
 import { PortfolioList } from '@/features/portfolio'
 import { ServiceList } from '@/features/services'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="container mx-auto flex flex-col">
+    <div className="flex flex-col">
       <HomeTitle />
       <ServiceList />
+      <ExperienceTimeline />
       <PortfolioList />
-    </main>
+    </div>
   )
 }
 
