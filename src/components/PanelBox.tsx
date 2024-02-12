@@ -5,7 +5,7 @@ export type PanelBoxProps = PropsWithChildren<{
 }>
 
 const PanelBox = ({ variant = 'dark', children }: PanelBoxProps) => (
-  <div className={`rounded-[64px] px-16 py-24 ${className[variant]}`}>{children}</div>
+  <article className={`rounded-[64px] px-16 py-24 ${className[variant]}`}>{children}</article>
 )
 
 export default PanelBox

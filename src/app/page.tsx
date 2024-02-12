@@ -1,6 +1,6 @@
 import Avatar from '@/components/Avatar'
 import { ExperienceTimeline } from '@/features/experience'
-import { PortfolioList } from '@/features/portfolio'
+import { PortfolioBox } from '@/features/portfolio'
 import { ServiceList } from '@/features/services'
 import Image from 'next/image'
 
@@ -10,7 +10,7 @@ export default function Home() {
       <HomeTitle />
       <ServiceList />
       <ExperienceTimeline />
-      <PortfolioList />
+      <PortfolioBox />
     </div>
   )
 }
