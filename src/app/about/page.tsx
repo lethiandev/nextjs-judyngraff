@@ -1,7 +1,9 @@
 import Button from '@/components/Button'
-import { useState } from 'react'
 
-const AboutPage = () => {
-}
+const AboutPage = () => (
+  <div className="p-6">
+    <Button>Hello, world!</Button>
+  </div>
+)
 
 export default AboutPage
