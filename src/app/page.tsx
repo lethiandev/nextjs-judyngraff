@@ -1,6 +1,6 @@
 import Avatar from '@/components/Avatar'
 import { ExperienceTimeline } from '@/features/experience'
-import { PortfolioBox } from '@/features/portfolio'
+import { PortfolioSection } from '@/features/portfolio'
 import { ServiceBox } from '@/features/services'
 import { Testimonials } from '@/features/testimonials'
 import Image from 'next/image'
@@ -11,7 +11,7 @@ export default function Home() {
       <HomeTitle />
       <ServiceBox />
       <ExperienceTimeline />
-      <PortfolioBox />
+      <PortfolioSection />
       <Testimonials />
     </div>
   )
