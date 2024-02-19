@@ -66,7 +66,7 @@ const Rating = ({ stars = 5, rating = 0 }) => (
   </div>
 )
 
-const RatingStar = ({ isActive }: { isActive: boolean }) => (
+const RatingStar = ({ isActive = false }) => (
   <Image
     className="mb-0.5 block h-4"
     src={isActive ? starOnImage : starOffImage}
