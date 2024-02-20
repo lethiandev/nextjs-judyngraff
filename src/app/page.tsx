@@ -1,7 +1,7 @@
 import Avatar from '@/components/Avatar'
 import { ExperienceTimeline } from '@/features/experience'
 import { PortfolioSection } from '@/features/portfolio'
-import { ServiceBox } from '@/features/services'
+import { ServicesSection } from '@/features/services'
 import { Testimonials } from '@/features/testimonials'
 import Image from 'next/image'
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <HomeTitle />
-      <ServiceBox />
+      <ServicesSection />
       <ExperienceTimeline />
       <PortfolioSection />
       <Testimonials />
