@@ -1,4 +1,4 @@
-import PanelNavigation from '@/components/PanelNavigation'
+import OverlayNavigate from '@/components/OverlayNavigate'
 import Image from 'next/image'
 import { Project, defaultProjects } from './models'
 
@@ -14,7 +14,7 @@ export default Portfolio
 
 const PortfolioCard = ({ project }: { project: Project }) => (
   <article className="rounded-[32px] bg-background p-2">
-    <PanelNavigation>
+    <OverlayNavigate>
       <div className="w-full pb-[64%]" />
       <Image
         className="rounded-[24px]"
@@ -23,6 +23,6 @@ const PortfolioCard = ({ project }: { project: Project }) => (
         fill
         aria-hidden
       />
-    </PanelNavigation>
+    </OverlayNavigate>
   </article>
 )

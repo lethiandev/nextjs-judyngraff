@@ -1,9 +1,7 @@
 import Image from 'next/image'
 import { PropsWithChildren } from 'react'
 
-export type PanelNavigationProps = PropsWithChildren
-
-const PanelNavigation = ({ children }: PanelNavigationProps) => (
+const OverlayNavigate = ({ children }: PropsWithChildren) => (
   <div className="group relative">
     {children}
     <div className="absolute bottom-4 right-4">
@@ -14,4 +12,4 @@ const PanelNavigation = ({ children }: PanelNavigationProps) => (
   </div>
 )
 
-export default PanelNavigation
+export default OverlayNavigate

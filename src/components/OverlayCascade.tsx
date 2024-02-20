@@ -1,10 +1,10 @@
 import { PropsWithChildren } from 'react'
 
-export type PanelCascadeProps = PropsWithChildren<{
+export type OverlayCascadeProps = PropsWithChildren<{
   color?: string
 }>
 
-const PanelCascade = ({ color, children }: PanelCascadeProps) => (
+const OverlayCascade = ({ color, children }: OverlayCascadeProps) => (
   <div className="relative mt-6">
     <div
       className="absolute -top-6 h-full w-full origin-top scale-90 rounded-[32px] opacity-25"
@@ -18,4 +18,4 @@ const PanelCascade = ({ color, children }: PanelCascadeProps) => (
   </div>
 )
 
-export default PanelCascade
+export default OverlayCascade
