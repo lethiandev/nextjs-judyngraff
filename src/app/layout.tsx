@@ -1,4 +1,4 @@
-import Header from '@/partials/Header'
+import RootNavigation from '@/partials/RootNavigation'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
@@ -15,18 +15,18 @@ export type RootLayoutProps = {
   children: React.ReactNode
 }
 
-export default function RootLayout({ modal, children }: RootLayoutProps) {
+const RootLayout = ({ modal, children }: RootLayoutProps) => {
   return (
     <html lang="en">
       <body className={`min-h-screen ${poppins.className}`}>
-        <div className="container mx-auto px-16 py-8">
-          <header>
-            <Header />
-          </header>
-          <main>{children}</main>
+        <div className="mx-auto max-w-[1440px] px-16">
+          <RootNavigation />
+          {children}
         </div>
         {modal}
       </body>
     </html>
   )
 }
+
+export default RootLayout
