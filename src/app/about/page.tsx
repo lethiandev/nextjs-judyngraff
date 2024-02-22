@@ -133,7 +133,7 @@ const ApproachCard = ({ count = 1, heading = '', children = '' }) => (
 )
 
 const ChooseMeCard = ({ iconUrl = '', heading = '', children = '' }) => (
-  <article className="rounded-[32px] bg-background p-8 text-on-background shadow">
+  <article className="rounded-[32px] bg-background p-8 text-on-background shadow-lg shadow-gray-100">
     <header className="mb-8 flex flex-col items-center">
       <Image src={iconUrl} width={48} height={48} alt="Icon" aria-hidden />
       <h2 className="text-center text-xl font-semibold">{heading}</h2>

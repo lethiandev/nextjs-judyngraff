@@ -3,31 +3,31 @@ import Button from '@/components/Button'
 const FooterContactForm = () => (
   <form className="mx-auto grid max-w-[860px] gap-8 md:grid-cols-2">
     <input
-      className="rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow outline-primary"
+      className="rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow-lg shadow-gray-100 outline-primary"
       placeholder="Name"
       type="text"
       name="name"
     />
     <input
-      className="rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow outline-primary"
+      className="rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow-lg shadow-gray-100 outline-primary"
       placeholder="Email"
       type="email"
       name="email"
     />
     <input
-      className="rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow outline-primary"
+      className="rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow-lg shadow-gray-100 outline-primary"
       placeholder="Phone"
       type="tel"
       name="phone"
     />
     <input
-      className="rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow outline-primary"
+      className="rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow-lg shadow-gray-100 outline-primary"
       placeholder="Budget"
       type="text"
       name="budget"
     />
     <textarea
-      className="col-span-2 mb-8 rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow outline-primary"
+      className="col-span-2 mb-8 rounded-[2rem] bg-background px-6 py-4 placeholder-gray-200 shadow-lg shadow-gray-100 outline-primary"
       placeholder="Message"
       name="message"
       rows={8}

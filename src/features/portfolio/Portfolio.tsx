@@ -13,7 +13,7 @@ export const Portfolio = ({ projects = defaultProjects }) => (
 export default Portfolio
 
 const PortfolioCard = ({ project }: { project: Project }) => (
-  <article className="rounded-[32px] bg-background p-2">
+  <article className="rounded-[32px] bg-background p-2 shadow-lg shadow-gray-100">
     <OverlayNavigate>
       <div className="w-full pb-[64%]" />
       <Image
