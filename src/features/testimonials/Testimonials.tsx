@@ -60,7 +60,7 @@ const TestimonialAuthor = ({ imageUrl = '', name = '', company = '' }) => (
 const Rating = ({ stars = 5, rating = 0 }) => (
   <div className="flex flex-row items-center gap-1">
     {Array.from({ length: stars }).map((_, index) => (
-      <RatingStar isActive={index < Math.round(rating)} />
+      <RatingStar key={index} isActive={index < Math.round(rating)} />
     ))}
     <span className="ml-1 font-semibold">{rating.toFixed(1)}</span>
   </div>
