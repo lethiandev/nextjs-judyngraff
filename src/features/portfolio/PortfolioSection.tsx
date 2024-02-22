@@ -13,18 +13,8 @@ export const PortfolioSection = ({ projects = defaultProjects }) => (
       </div>
     </header>
     <hr className="my-8 border-current opacity-10" />
-    <Portfolio projects={projects} />
+    <Portfolio projects={projects.filter(({ featured }) => featured)} />
   </section>
 )
 
-export const PortfolioSectionFilter = ({ projects = defaultProjects }) => (
-  <section className="py-16">
-    <div className="mb-8 flex justify-center gap-8">
-      <Button isActive={true}>Web/App Design</Button>
-      <Button isActive={false}>Brand Design</Button>
-      <Button isActive={false}>Clothing</Button>
-      <Button isActive={false}>Other</Button>
-    </div>
-    <Portfolio projects={projects} />
-  </section>
-)
+export default PortfolioSection

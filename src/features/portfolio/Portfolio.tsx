@@ -4,8 +4,8 @@ import { Project, defaultProjects } from './models'
 
 export const Portfolio = ({ projects = defaultProjects }) => (
   <div className="grid gap-8 md:grid-cols-3">
-    {projects.map((project, index) => (
-      <PortfolioCard key={index} project={project} />
+    {projects.map(project => (
+      <PortfolioCard key={project.id} project={project} />
     ))}
   </div>
 )

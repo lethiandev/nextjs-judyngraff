@@ -1,10 +1,57 @@
 export type Project = {
+  id: string
   projectName: string
   imageUrl: string
+  description: string
+  featured?: boolean
+  category?: ProjectCategory
 }
 
+export type ProjectCategory = 'web-app' | 'brand' | 'clothing'
+
 export const defaultProjects: Project[] = [
-  { projectName: 'Website', imageUrl: '/portfolio/website.jpeg' },
-  { projectName: 'Mobile App', imageUrl: '/portfolio/mobile-app.jpeg' },
-  { projectName: 'Logo Design', imageUrl: '/portfolio/logo-design.jpeg' },
+  {
+    id: 'project-1',
+    projectName: 'Website',
+    imageUrl: '/portfolio/website.jpeg',
+    description: 'Lorem ipsum dolor sit amet',
+    featured: true,
+    category: 'web-app',
+  },
+  {
+    id: 'project-2',
+    projectName: 'Mobile App',
+    imageUrl: '/portfolio/mobile-app.jpeg',
+    description: 'Lorem ipsum dolor sit amet',
+    featured: true,
+    category: 'brand',
+  },
+  {
+    id: 'project-3',
+    projectName: 'Logo Design',
+    imageUrl: '/portfolio/logo-design.jpeg',
+    description: 'Lorem ipsum dolor sit amet',
+    featured: true,
+    category: 'clothing',
+  },
+  {
+    id: 'project-4',
+    projectName: 'Mobile App',
+    imageUrl: '/portfolio/mobile-app.jpeg',
+    description: 'Lorem ipsum dolor sit amet',
+    category: 'brand',
+  },
+  {
+    id: 'project-5',
+    projectName: 'Website',
+    imageUrl: '/portfolio/website.jpeg',
+    description: 'Lorem ipsum dolor sit amet',
+    category: 'web-app',
+  },
+  {
+    id: 'project-6',
+    projectName: 'Logo Design',
+    imageUrl: '/portfolio/logo-design.jpeg',
+    description: 'Lorem ipsum dolor sit amet',
+  },
 ]
