@@ -1,4 +1,4 @@
-import OverlayNavigate from '@/components/OverlayNavigate'
+import OverlayPreview from '@/components/OverlayPreview'
 import Image from 'next/image'
 import { Project, defaultProjects } from './models'
 
@@ -13,16 +13,12 @@ export const Portfolio = ({ projects = defaultProjects }) => (
 export default Portfolio
 
 const PortfolioCard = ({ project }: { project: Project }) => (
-  <article className="rounded-[32px] bg-background p-2 shadow-lg shadow-gray-100">
-    <OverlayNavigate>
-      <div className="w-full pb-[64%]" />
-      <Image
-        className="rounded-[24px]"
-        alt={project.projectName}
-        src={project.imageUrl}
-        fill
-        aria-hidden
-      />
-    </OverlayNavigate>
+  <article className="rounded-[2rem] bg-background p-2 text-background shadow-lg shadow-gray-100">
+    <div className="overflow-hidden rounded-[1.5rem]">
+      <OverlayPreview label={project.projectName}>
+        <div className="w-full pb-[64%]" />
+        <Image alt={project.projectName} src={project.imageUrl} fill aria-hidden />
+      </OverlayPreview>
+    </div>
   </article>
 )
