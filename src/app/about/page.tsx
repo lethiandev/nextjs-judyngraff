@@ -20,23 +20,23 @@ const AboutPage = () => (
         </div>
         <div className="flex flex-col justify-center">
           <h2 className="mb-8 text-5xl font-semibold">
-            Hi, I'm <span className="text-primary">Jakub!</span>
+            Hi, I&apos;m <span className="text-primary">Jakub!</span>
           </h2>
           <p className="mb-8">
-            I'm a passionate graphic designer with many years of creative experience. I believe that
-            design has the power to transform ideas into visual stories, and I'm here to help you
-            tell your story in the most compelling way possible.
+            I&apos;m a passionate graphic designer with many years of creative experience. I believe
+            that design has the power to transform ideas into visual stories, and I&apos;m here to
+            help you tell your story in the most compelling way possible.
           </p>
           <p className="mb-8">
             My journey as a graphic designer began at the age of thirteen, when I started to
-            familiarise myself with graphic design programs. Over the years, I've had the privilege
-            of working with a diverse range of clients, from startups to established brands. Each
-            project has been a unique opportunity to bring creativity to life.
+            familiarise myself with graphic design programs. Over the years, I&apos;ve had the
+            privilege of working with a diverse range of clients, from startups to established
+            brands. Each project has been a unique opportunity to bring creativity to life.
           </p>
           <p className="mb-8">
-            I have a deep love for design in all its forms. Whether it's crafting a clean and modern
-            logo, designing a user-friendly website, or creating eye-catching marketing materials, I
-            thrive on the challenge of turning ideas into visually stunning realities.
+            I have a deep love for design in all its forms. Whether it&apos;s crafting a clean and
+            modern logo, designing a user-friendly website, or creating eye-catching marketing
+            materials, I thrive on the challenge of turning ideas into visually stunning realities.
           </p>
         </div>
       </section>
@@ -84,8 +84,8 @@ const AboutPage = () => (
             and digital media.
           </ChooseMeCard>
           <ChooseMeCard iconUrl={iconUserFocus} heading="Client Focused">
-            Your satisfaction is my top priority. I'm dedicated to delivering results that exceed
-            your expectations.
+            Your satisfaction is my top priority. I&apos;m dedicated to delivering results that
+            exceed your expectations.
           </ChooseMeCard>
         </div>
       </section>
@@ -93,16 +93,16 @@ const AboutPage = () => (
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <h2 className="mb-8 text-4xl font-semibold">
-              Let's Create <span className="text-primary">Together</span>
+              Let&apos;s Create <span className="text-primary">Together</span>
             </h2>
             <p className="mb-8">
-              Whether you're a small business owner looking to establish your brand identity, a
+              Whether you&apos;re a small business owner looking to establish your brand identity, a
               non-profit in need of captivating visuals, or an individual with a creative project in
-              mind, I'm here to bring your ideas to life.
+              mind, I&apos;m here to bring your ideas to life.
             </p>
             <p className="mb-8">
-              Let's collaborate and turn your vision into reality. Contact me today to discuss your
-              project, and let's embark on a design journey together.
+              Let&apos;s collaborate and turn your vision into reality. Contact me today to discuss
+              your project, and let&apos;s embark on a design journey together.
             </p>
             <p className="mb-8">
               Thank you for considering me as your partner in design. I look forward to working with

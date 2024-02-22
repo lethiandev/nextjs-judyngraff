@@ -9,7 +9,7 @@ const PortfolioPage = () => (
       <p className="text-center">
         Explore my diverse graphic design portfolio – creativity in every pixel.
         <br />
-        Get inspired or let's collaborate!
+        Get inspired or let&apos;s collaborate!
       </p>
     </header>
     <main>

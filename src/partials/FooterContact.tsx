@@ -7,7 +7,7 @@ const FooterContact = () => (
         Get in <span className="text-primary">Touch</span>
       </h2>
       <p className="max-w-[640px] text-center">
-        Were you to invest in your company's design, I would be more than happy to provide
+        Were you to invest in your company&apos;s design, I would be more than happy to provide
         assistance for <span className="text-primary">all your desires and needs</span>.
       </p>
     </header>
