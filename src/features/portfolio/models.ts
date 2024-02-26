@@ -3,11 +3,11 @@ export type Project = {
   projectName: string
   imageUrl: string
   description: string
+  category: ProjectCategory
   featured?: boolean
-  category?: ProjectCategory
 }
 
-export type ProjectCategory = 'web-app' | 'brand' | 'clothing'
+export type ProjectCategory = 'web-app' | 'brand' | 'clothing' | 'other'
 
 export const defaultProjects: Project[] = [
   {
@@ -53,5 +53,6 @@ export const defaultProjects: Project[] = [
     projectName: 'Logo Design',
     imageUrl: '/portfolio/logo-design.jpeg',
     description: 'Lorem ipsum dolor sit amet',
+    category: 'other',
   },
 ]
