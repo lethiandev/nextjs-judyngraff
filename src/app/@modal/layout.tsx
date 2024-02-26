@@ -7,13 +7,19 @@ const ModalLayout = ({ children }: { children: ReactNode }) => {
   const router = useRouter()
 
   return (
-    <dialog className="m-4 rounded bg-slate-400 p-4" onClose={() => router.back()} open>
-      <button type="button" onClick={() => router.back()}>
-        Close
-      </button>
-      <p>This is Modal Layout</p>
-      <div>{children}</div>
-    </dialog>
+    <div className="fixed inset-0 p-8" role="dialog" aria-labelledby="modal-title" aria-modal>
+      <div className="fixed inset-0 bg-background bg-opacity-50"></div>
+      <div className="flex h-full w-full items-center justify-center">
+        <div className="relative max-h-full min-w-[768px] max-w-full rounded-[4rem] bg-background p-8 text-on-background drop-shadow-xl">
+          <div className="absolute right-4 top-4">
+            <button type="button" onClick={() => router.back()}>
+              Close
+            </button>
+          </div>
+          <div className="flex-grow scroll-auto">{children}</div>
+        </div>
+      </div>
+    </div>
   )
 }
 
