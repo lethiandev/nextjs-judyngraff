@@ -8,7 +8,7 @@ const RootNavigation = () => (
     <Navigation>
       <NavigationLink href="/">Home</NavigationLink>
       <NavigationLink href="/about">About</NavigationLink>
-      <NavigationLink href="/service">Service</NavigationLink>
+      <NavigationLink href="/services">Service</NavigationLink>
       <Link href="/" className="order-first mx-auto shrink-0 px-4 sm:my-1 md:order-none md:-my-1">
         <Image alt="Logo" src="/logo.svg" height={40} width={84} />
       </Link>
