@@ -6,8 +6,8 @@ import { Project, defaultProjects } from './models'
 export const Portfolio = ({ projects = defaultProjects }) => (
   <div className="grid gap-8 md:grid-cols-3">
     {projects.map(project => (
-      <PreserveSearchLink href={`/portfolio/${project.id}`} scroll={false}>
-        <PortfolioCard key={project.id} project={project} />
+      <PreserveSearchLink key={project.id} href={`/portfolio/${project.id}`} scroll={false}>
+        <PortfolioCard project={project} />
       </PreserveSearchLink>
     ))}
   </div>
