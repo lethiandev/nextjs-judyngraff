@@ -1,6 +1,8 @@
+import Section from '@/components/Section'
 import Image from 'next/image'
-import servicesImage from './services.png'
 import { ReactNode } from 'react'
+
+import servicesImage from './services.png'
 
 const ServicesPage = () => (
   <>
@@ -16,7 +18,7 @@ const ServicesPage = () => (
       <Image className="mx-auto max-w-full" src={servicesImage} alt="Services" aria-hidden />
     </header>
     <main>
-      <section className="rounded-[4rem] bg-surface px-16 py-[6rem] text-on-surface">
+      <Section variant="surface">
         <h2 className="mb-4 text-4xl font-semibold">
           Brand <span className="text-primary">Identity</span>
         </h2>
@@ -53,7 +55,7 @@ const ServicesPage = () => (
         </Subsection>
         <Subsection label={'Team Crest/Mascot Logo'} price={<>from &pound;100</>} />
         <Subsection label={'Recreation of an existing Logo'} price={<>from &pound;100</>} />
-      </section>
+      </Section>
     </main>
   </>
 )

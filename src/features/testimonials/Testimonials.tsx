@@ -1,3 +1,4 @@
+import Section from '@/components/Section'
 import Image from 'next/image'
 import { Testimonial, defaultTestimonials } from './testimonial'
 
@@ -7,7 +8,7 @@ import starOffImage from './star-off.svg'
 import starOnImage from './star-on.svg'
 
 export const Testimonials = ({ testimonials = defaultTestimonials }) => (
-  <section className="p-16">
+  <Section variant="background">
     <header className="mb-16 grid items-center md:grid-cols-2">
       <h2 className="text-5xl font-semibold">
         Client <span className="text-primary">Testimonials</span>
@@ -23,7 +24,7 @@ export const Testimonials = ({ testimonials = defaultTestimonials }) => (
         <TestimonialCard key={index} testimonial={testimonial} />
       ))}
     </div>
-  </section>
+  </Section>
 )
 
 export default Testimonials

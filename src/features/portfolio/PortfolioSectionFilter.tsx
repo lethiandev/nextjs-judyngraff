@@ -1,9 +1,9 @@
 'use client'
 import Button from '@/components/Button'
-import { useState } from 'react'
+import Section from '@/components/Section'
+import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 import Portfolio from './Portfolio'
 import { ProjectCategory, defaultProjects } from './models'
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
 
 const filterButtons: { category: ProjectCategory; label: string }[] = [
   { category: 'web-app', label: 'Web/App Design' },
@@ -20,7 +20,7 @@ export const PortfolioSectionFilter = ({ projects = defaultProjects }) => {
   )
 
   return (
-    <section className="pb-16">
+    <Section variant="background">
       <div className="mb-16 flex justify-center gap-8">
         {filterButtons.map(({ category, label }, index) => (
           <Button key={index} isActive={filter === category} onClick={() => change(category)}>
@@ -29,7 +29,7 @@ export const PortfolioSectionFilter = ({ projects = defaultProjects }) => {
         ))}
       </div>
       <Portfolio projects={filteredProjects} />
-    </section>
+    </Section>
   )
 }
 

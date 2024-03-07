@@ -1,3 +1,4 @@
+import Section from '@/components/Section'
 import Image from 'next/image'
 
 import houseImage from './house.png'
@@ -40,15 +41,15 @@ const AboutPage = () => (
           </p>
         </div>
       </section>
-      <section className="rounded-[4rem] bg-surface px-16 py-[6rem] text-on-surface">
+      <Section variant="surface">
         <div className="flex flex-col items-center">
           <p className="text-5xl font-semibold">
             Transforming Concepts into Reality: <br />
             Partner for <span className="text-primary">Achieving Success</span>!
           </p>
         </div>
-      </section>
-      <section className="px-16 py-[6rem]">
+      </Section>
+      <Section variant="background">
         <header className="mb-12">
           <h2 className="mb-4 text-4xl font-semibold">
             My <span className="text-primary">Approach</span>
@@ -68,8 +69,8 @@ const AboutPage = () => (
             realized.
           </ApproachCard>
         </div>
-      </section>
-      <section className="rounded-[4rem] bg-surface-light px-16 py-[6rem] text-on-surface-light">
+      </Section>
+      <Section variant="surface-light">
         <header className="mb-12">
           <h2 className="mb-4 text-4xl font-semibold">
             Why Choose <span className="text-primary">Me</span>?
@@ -88,8 +89,8 @@ const AboutPage = () => (
             exceed your expectations.
           </ChooseMeCard>
         </div>
-      </section>
-      <section className="px-16 py-[6rem]">
+      </Section>
+      <Section variant="background">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <h2 className="mb-8 text-4xl font-semibold">
@@ -113,7 +114,7 @@ const AboutPage = () => (
             <Image className="max-w-full" src={houseImage} alt="Creativity" aria-hidden />
           </div>
         </div>
-      </section>
+      </Section>
     </main>
   </>
 )

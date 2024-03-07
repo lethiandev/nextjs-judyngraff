@@ -1,8 +1,9 @@
+import Section from '@/components/Section'
 import Services from './Services'
 import { defaultServices } from './models'
 
 export const ServicesSection = ({ services = defaultServices }) => (
-  <section className="rounded-[64px] bg-surface p-16 text-on-surface">
+  <Section variant="surface">
     <header className="grid md:grid-cols-2">
       <h2 className="text-5xl font-semibold">
         My <span className="text-primary">Portfolio</span>
@@ -14,7 +15,7 @@ export const ServicesSection = ({ services = defaultServices }) => (
     </header>
     <hr className="my-8 border-current opacity-10" />
     <Services services={services} />
-  </section>
+  </Section>
 )
 
 export default ServicesSection
