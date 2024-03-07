@@ -12,7 +12,7 @@ export default function PortfolioSection({ projects = defaultProjects }) {
     <Section variant="surface-light">
       <SectionHeader heading={<PortfolioHeading />} horizontalRule>
         <div className="flex justify-end">
-          <Button>See More</Button>
+          <Button type="button">See More</Button>
         </div>
       </SectionHeader>
       <Portfolio projects={projects.filter(({ featured }) => featured)} />
