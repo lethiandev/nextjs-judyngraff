@@ -1,4 +1,4 @@
-import classNames from 'classnames'
+import clsx from 'clsx/lite'
 import { ElementType } from 'react'
 
 export type HeadingLevel = 1 | 2 | 3 | 4
@@ -10,7 +10,7 @@ export type HeadingProps = JSX.IntrinsicElements[`h${HeadingLevel}`] & {
 
 export default function Heading({ as, level = 1, className, ...props }: HeadingProps) {
   const Tag = as ?? (`h${level}` as ElementType<any, `h${HeadingLevel}`>)
-  return <Tag className={classNames(selectVariant(level), className)} {...props} />
+  return <Tag className={clsx(selectVariant(level), className)} {...props} />
 }
 
 function selectVariant(level: HeadingLevel) {

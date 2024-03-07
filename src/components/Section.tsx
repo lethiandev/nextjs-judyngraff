@@ -1,4 +1,4 @@
-import classNames from 'classnames'
+import clsx from 'clsx/lite'
 import { ElementType } from 'react'
 
 export type SectionVariant = 'primary' | 'surface' | 'surface-light' | 'background'
@@ -10,7 +10,7 @@ export type SectionProps = JSX.IntrinsicElements['section' | 'article'] & {
 
 export default function Section({ as: Wrapper = 'section', ...props }: SectionProps) {
   const { variant = 'surface', className, ...htmlProps } = props
-  return <Wrapper className={classNames(selectVariant(variant), className)} {...htmlProps} />
+  return <Wrapper className={clsx(selectVariant(variant), className)} {...htmlProps} />
 }
 
 function selectVariant(variant: SectionVariant) {
