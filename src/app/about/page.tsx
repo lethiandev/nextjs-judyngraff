@@ -12,7 +12,7 @@ const AboutPage = () => (
   <>
     <header className="flex flex-col items-center px-16 py-[6rem]">
       <Heading level={1}>
-        About <span className="text-primary">Me</span>
+        About <span>Me</span>
       </Heading>
     </header>
     <main>
@@ -22,7 +22,7 @@ const AboutPage = () => (
         </div>
         <div className="flex flex-col justify-center">
           <Heading level={2} className="mb-8">
-            Hi, I&apos;m <span className="text-primary">Jakub!</span>
+            Hi, I&apos;m <span>Jakub!</span>
           </Heading>
           <p className="mb-8">
             I&apos;m a passionate graphic designer with many years of creative experience. I believe
@@ -44,7 +44,7 @@ const AboutPage = () => (
       </section>
       <Section variant="surface">
         <div className="flex flex-col items-center">
-          <p className="text-5xl font-semibold">
+          <p className="text-[3rem] font-semibold leading-[1.2]">
             Transforming Concepts into Reality: <br />
             Partner for <span className="text-primary">Achieving Success</span>!
           </p>
@@ -52,9 +52,9 @@ const AboutPage = () => (
       </Section>
       <Section variant="background">
         <header className="mb-12">
-          <h2 className="mb-4 text-4xl font-semibold">
-            My <span className="text-primary">Approach</span>
-          </h2>
+          <Heading level={3} className="mb-4">
+            My <span>Approach</span>
+          </Heading>
           <p>My design philosophy revolves around three core principles:</p>
         </header>
         <div className="grid gap-8 md:grid-cols-3">
@@ -72,10 +72,10 @@ const AboutPage = () => (
         </div>
       </Section>
       <Section variant="surface-light">
-        <header className="mb-12">
-          <h2 className="mb-4 text-4xl font-semibold">
-            Why Choose <span className="text-primary">Me</span>?
-          </h2>
+        <header className="mb-8">
+          <Heading level={3}>
+            Why Choose <span>Me</span>?
+          </Heading>
         </header>
         <div className="grid gap-8 md:grid-cols-3">
           <ChooseMeCard iconUrl={iconBackpack} heading="Experience">
@@ -94,9 +94,9 @@ const AboutPage = () => (
       <Section variant="background">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
-            <h2 className="mb-8 text-4xl font-semibold">
-              Let&apos;s Create <span className="text-primary">Together</span>
-            </h2>
+            <Heading level={3} className="mb-2">
+              Let&apos;s Create <span>Together</span>
+            </Heading>
             <p className="mb-8">
               Whether you&apos;re a small business owner looking to establish your brand identity, a
               non-profit in need of captivating visuals, or an individual with a creative project in
