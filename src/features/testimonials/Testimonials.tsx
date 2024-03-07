@@ -1,4 +1,5 @@
 import Section from '@/components/Section'
+import SectionHeader from '@/components/SectionHeader'
 import Image from 'next/image'
 import { Testimonial, defaultTestimonials } from './testimonial'
 
@@ -7,25 +8,24 @@ import quoteMarkImage from './quotemark.svg'
 import starOffImage from './star-off.svg'
 import starOnImage from './star-on.svg'
 
-export const Testimonials = ({ testimonials = defaultTestimonials }) => (
-  <Section variant="background">
-    <header className="mb-16 grid items-center md:grid-cols-2">
-      <h2 className="text-5xl font-semibold">
-        Client <span className="text-primary">Testimonials</span>
-      </h2>
-      <p className="text-base">
+export function Testimonials({ testimonials = defaultTestimonials }) {
+  // prettier-ignore
+  const TestimonialsHeader = () => <>Client <span>Testimonials</span></>
+
+  return (
+    <Section variant="background">
+      <SectionHeader heading={<TestimonialsHeader />}>
         Satisfied customer references underscore the success of our collaborations, endorsing my
-        value and commitment to{' '}
-        <span className="text-nowrap text-primary">exceptional results.</span>
-      </p>
-    </header>
-    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      {testimonials.map((testimonial, index) => (
-        <TestimonialCard key={index} testimonial={testimonial} />
-      ))}
-    </div>
-  </Section>
-)
+        value and commitment to <span>exceptional results.</span>
+      </SectionHeader>
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {testimonials.map((testimonial, index) => (
+          <TestimonialCard key={index} testimonial={testimonial} />
+        ))}
+      </div>
+    </Section>
+  )
+}
 
 export default Testimonials
 

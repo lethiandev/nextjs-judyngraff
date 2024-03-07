@@ -1,3 +1,3 @@
 export * from './Services'
-export * from './ServicesSection'
+export { default as ServicesSection } from './ServicesSection'
 export * from './models'
