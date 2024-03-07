@@ -1,17 +1,19 @@
-import { ElementType, ReactNode } from 'react'
+import classNames from 'classnames'
+import { ElementType } from 'react'
 
-export type SectionProps = {
-  as?: ElementType<any, 'div' | 'section' | 'article'>
-  variant?: 'primary' | 'surface' | 'surface-light' | 'background'
-  children?: ReactNode
+export type SectionVariant = 'primary' | 'surface' | 'surface-light' | 'background'
+
+export type SectionProps = JSX.IntrinsicElements['section' | 'article'] & {
+  as?: ElementType<any, 'section' | 'article'>
+  variant?: SectionVariant
 }
 
-export default function Section({ as: Wrapper = 'section', variant, children }: SectionProps) {
-  const className = selectVariant(variant)
-  return <Wrapper className={className}>{children}</Wrapper>
+export default function Section({ as: Wrapper = 'section', ...props }: SectionProps) {
+  const { variant = 'surface', className, ...htmlProps } = props
+  return <Wrapper className={classNames(selectVariant(variant), className)} {...htmlProps} />
 }
 
-function selectVariant(variant: SectionProps['variant'] = 'surface') {
+function selectVariant(variant: SectionVariant) {
   const className = {
     base: 'px-16 py-[6rem] rounded-[4rem]',
     primary: 'bg-primary text-on-primary',
