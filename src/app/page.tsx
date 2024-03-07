@@ -1,4 +1,5 @@
 import Avatar from '@/components/Avatar'
+import Heading from '@/components/Heading'
 import { ExperienceTimeline } from '@/features/experience'
 import { PortfolioSection } from '@/features/portfolio'
 import { ServicesSection } from '@/features/services'
@@ -19,12 +20,11 @@ export default function Home() {
 
 const HomeTitle = () => (
   <div className="flex flex-col items-stretch px-16">
-    <h2 className="mb-4 text-center text-[64px] font-semibold leading-[120%]">
-      <Image src="/hello.svg" alt="Hello!" className="inline-block" width={70} height={46} />
-      <br />
-      I&apos;m <span className="text-lime-500">Jakub</span>,<br />
+    <Heading level={1} className="my-4 text-center leading-[1.20]">
+      <Image src="/hello.svg" alt="Hello!" className="mx-auto mb-2 block" width={70} height={46} />
+      I&apos;m <span>Jakub</span>,<br />
       Graphic Designer
-    </h2>
+    </Heading>
     <div className="grid grid-cols-5 gap-8">
       <div>
         <p>

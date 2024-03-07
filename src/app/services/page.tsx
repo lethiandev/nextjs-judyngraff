@@ -1,3 +1,4 @@
+import Heading from '@/components/Heading'
 import Section from '@/components/Section'
 import Image from 'next/image'
 import { ReactNode } from 'react'
@@ -7,9 +8,9 @@ import servicesImage from './services.png'
 const ServicesPage = () => (
   <>
     <header className="pt-16">
-      <h1 className="mb-6 text-center text-6xl font-semibold">
-        My <span className="text-primary">Services</span>
-      </h1>
+      <Heading level={1} className="mb-6 text-center">
+        My <span>Services</span>
+      </Heading>
       <p className="mx-auto max-w-[767px] text-center">
         Transforming visions into visuals: my graphic design services bring your ideas to life.
         <br /> From stunning logos and captivating marketing collaterals to websites and mobile

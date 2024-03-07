@@ -1,11 +1,12 @@
+import Heading from '@/components/Heading'
 import { PortfolioSectionFilter } from '@/features/portfolio'
 
 const PortfolioPage = () => (
   <>
     <header className="flex flex-col items-center py-[96px]">
-      <h1 className="mb-4 text-5xl font-bold">
-        My <span className="text-primary">Portfolio</span>
-      </h1>
+      <Heading level={1} className="mb-4">
+        My <span>Portfolio</span>
+      </Heading>
       <p className="text-center">
         Explore my diverse graphic design portfolio – creativity in every pixel.
         <br />

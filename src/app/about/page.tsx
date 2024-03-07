@@ -1,3 +1,4 @@
+import Heading from '@/components/Heading'
 import Section from '@/components/Section'
 import Image from 'next/image'
 
@@ -10,9 +11,9 @@ import profileImage from './profile.png'
 const AboutPage = () => (
   <>
     <header className="flex flex-col items-center px-16 py-[6rem]">
-      <h1 className="text-5xl font-semibold">
+      <Heading level={1}>
         About <span className="text-primary">Me</span>
-      </h1>
+      </Heading>
     </header>
     <main>
       <section className="grid gap-8 md:grid-cols-2">
@@ -20,9 +21,9 @@ const AboutPage = () => (
           <Image className="max-w-full" alt="Profile Picture" src={profileImage} aria-hidden />
         </div>
         <div className="flex flex-col justify-center">
-          <h2 className="mb-8 text-5xl font-semibold">
+          <Heading level={2} className="mb-8">
             Hi, I&apos;m <span className="text-primary">Jakub!</span>
-          </h2>
+          </Heading>
           <p className="mb-8">
             I&apos;m a passionate graphic designer with many years of creative experience. I believe
             that design has the power to transform ideas into visual stories, and I&apos;m here to
