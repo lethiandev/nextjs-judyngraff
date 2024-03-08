@@ -9,7 +9,7 @@ export default function ServicesSection({ services = defaultServices }) {
 
   return (
     <Section variant="surface">
-      <SectionHeader heading={<ServicesHeading />} horizontalRule>
+      <SectionHeader heading={<ServicesHeading />} hr>
         Below are some of my services, to see all the services available,{' '}
         <span>please visit the services section.</span>
       </SectionHeader>

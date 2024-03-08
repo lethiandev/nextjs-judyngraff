@@ -10,7 +10,7 @@ export default function PortfolioSection({ projects = defaultProjects }) {
 
   return (
     <Section variant="surface-light">
-      <SectionHeader heading={<PortfolioHeading />} horizontalRule>
+      <SectionHeader heading={<PortfolioHeading />} hr>
         <div className="flex justify-end">
           <Button type="button">See More</Button>
         </div>
