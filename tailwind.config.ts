@@ -22,7 +22,7 @@ const config: Config = {
       },
       keyframes: {
         'pop-in': {
-          '0%': { transform: 'translate(0, 100px)', opacity: '0.25' },
+          '0%': { transform: 'translate(0, 100px)', opacity: '0.05' },
           '100%': { transform: 'translate(0, 0px)', opacity: '1.0' },
         },
       },
