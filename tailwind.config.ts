@@ -20,6 +20,12 @@ const config: Config = {
         'background': '#FFFFFF',
         'on-background': '#2A2728',
       },
+      keyframes: {
+        'pop-in': {
+          '0%': { transform: 'translate(0, 100px)', opacity: '0.25' },
+          '100%': { transform: 'translate(0, 0px)', opacity: '1.0' },
+        },
+      },
     },
     screens: {
       sm: '576px',
