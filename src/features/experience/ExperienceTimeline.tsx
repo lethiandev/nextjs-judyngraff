@@ -14,7 +14,7 @@ export const ExperienceTimeline = ({ experience = defaultExperience }) => (
 
 const ExperienceCompany = ({ experience }: { experience: Experience }) => (
   <div className="mb-4 md:mb-16">
-    <Heading level={3} className="mb-2">
+    <Heading level={3} className="mb-2 md:-mt-2">
       {experience.companyName}
     </Heading>
     <p className="font-semibold text-primary">
@@ -25,7 +25,7 @@ const ExperienceCompany = ({ experience }: { experience: Experience }) => (
 
 const ExperienceDescription = ({ experience }: { experience: Experience }) => (
   <div className="mb-4 md:mb-16">
-    <Heading level={3} className="mb-2">
+    <Heading level={3} className="mb-2 md:-mt-2">
       {experience.jobTitle}
     </Heading>
     <p>{experience.jobDescription}</p>
