@@ -1,15 +1,18 @@
 import OverlayPreview from '@/components/OverlayPreview'
 import PreserveSearchLink from '@/components/PreserveSearchLink'
 import Image from 'next/image'
+import { Suspense } from 'react'
 import { Project, defaultProjects } from './models'
 
 export const Portfolio = ({ projects = defaultProjects }) => (
   <div className="grid gap-8 md:grid-cols-3">
-    {projects.map(project => (
-      <PreserveSearchLink key={project.id} href={`/portfolio/${project.id}`} scroll={false}>
-        <PortfolioCard project={project} />
-      </PreserveSearchLink>
-    ))}
+    <Suspense>
+      {projects.map(project => (
+        <PreserveSearchLink key={project.id} href={`/portfolio/${project.id}`} scroll={false}>
+          <PortfolioCard project={project} />
+        </PreserveSearchLink>
+      ))}
+    </Suspense>
   </div>
 )
 

@@ -20,7 +20,10 @@ export default function Home() {
         </SectionHeader>
         <Services />
       </Section>
-      <ExperienceTimeline />
+      <Section variant="background">
+        <SectionHeader heading={<Highlight>Education And Experience</Highlight>} />
+        <ExperienceTimeline />
+      </Section>
       <PortfolioSection />
       <Testimonials />
     </div>

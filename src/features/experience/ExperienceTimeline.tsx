@@ -1,25 +1,33 @@
 import Timeline, { TimelineContent } from '@/components/Timeline'
-import ExperienceCompany from './ExperienceCompany'
-import ExperienceDescription from './ExperienceDescription'
 import { Experience, defaultExperience } from './experience'
+import { formatDate } from './utils'
+import Heading from '@/components/Heading'
 
-export type ExperienceTimelineProps = {
-  experience?: Experience[]
-}
+export const ExperienceTimeline = ({ experience = defaultExperience }) => (
+  <Timeline>
+    {experience.map<TimelineContent>(exp => ({
+      leftContent: <ExperienceCompany experience={exp} />,
+      rightContent: <ExperienceDescription experience={exp} />,
+    }))}
+  </Timeline>
+)
 
-export const ExperienceTimeline = ({ experience = defaultExperience }: ExperienceTimelineProps) => (
-  <div className="px-16 py-24 pb-8 text-on-background">
-    <h3 className="mb-20 text-5xl font-semibold">
-      Education And <span className="text-primary">Experience</span>
-    </h3>
-    <Timeline>{buildSegmentsFrom(experience)}</Timeline>
+const ExperienceCompany = ({ experience }: { experience: Experience }) => (
+  <div className="mb-4 md:mb-16">
+    <Heading level={3} className="mb-2">
+      {experience.companyName}
+    </Heading>
+    <p className="font-semibold text-primary">
+      {formatDate(experience.startDate)} - {formatDate(experience.endDate)}
+    </p>
   </div>
 )
 
-export default ExperienceTimeline
-
-const buildSegmentsFrom = (experience: Experience[]) =>
-  experience.map<TimelineContent>(exp => ({
-    leftContent: <ExperienceCompany experience={exp} />,
-    rightContent: <ExperienceDescription experience={exp} />,
-  }))
+const ExperienceDescription = ({ experience }: { experience: Experience }) => (
+  <div className="mb-4 md:mb-16">
+    <Heading level={3} className="mb-2">
+      {experience.jobTitle}
+    </Heading>
+    <p>{experience.jobDescription}</p>
+  </div>
+)
