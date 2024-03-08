@@ -16,7 +16,7 @@ export default function Home() {
       <Section variant="surface">
         <SectionHeader heading={<Highlight>My Portfolio</Highlight>} hr>
           Below are some of my services, to see all the services available,{' '}
-          <span>please visit the services section.</span>
+          <span className="text-primary">please visit the services section.</span>
         </SectionHeader>
         <Services />
       </Section>
