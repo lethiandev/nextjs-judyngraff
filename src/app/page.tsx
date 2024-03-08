@@ -1,8 +1,11 @@
 import Avatar from '@/components/Avatar'
 import Heading from '@/components/Heading'
+import Highlight from '@/components/Highlight'
+import Section from '@/components/Section'
+import SectionHeader from '@/components/SectionHeader'
 import { ExperienceTimeline } from '@/features/experience'
 import { PortfolioSection } from '@/features/portfolio'
-import { ServicesSection } from '@/features/services'
+import { Services } from '@/features/services'
 import { Testimonials } from '@/features/testimonials'
 import Image from 'next/image'
 
@@ -10,7 +13,13 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <HomeTitle />
-      <ServicesSection />
+      <Section variant="surface">
+        <SectionHeader heading={<Highlight>My Portfolio</Highlight>} hr>
+          Below are some of my services, to see all the services available,{' '}
+          <span>please visit the services section.</span>
+        </SectionHeader>
+        <Services />
+      </Section>
       <ExperienceTimeline />
       <PortfolioSection />
       <Testimonials />

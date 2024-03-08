@@ -1,9 +1,9 @@
 import OverlayCascade from '@/components/OverlayCascade'
 import OverlayNavigate from '@/components/OverlayNavigate'
 import Image from 'next/image'
-import { Service } from './models'
+import { Service, defaultServices } from './models'
 
-export const Services = ({ services = [] }: { services?: Service[] }) => (
+export const Services = ({ services = defaultServices }) => (
   <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
     {services.map((service, index) => (
       <ServiceCard key={index} service={service} />
