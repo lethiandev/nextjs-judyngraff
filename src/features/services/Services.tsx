@@ -11,8 +11,6 @@ export const Services = ({ services = defaultServices }) => (
   </div>
 )
 
-export default Services
-
 export const ServiceCard = ({ service }: { service: Service }) => (
   <div className="rounded-[32px] bg-surface-variant text-on-surface-variant transition-colors hover:bg-primary">
     <OverlayNavigate>
