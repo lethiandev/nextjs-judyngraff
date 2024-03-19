@@ -23,9 +23,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <div className="mx-auto max-w-[1440px] px-16">
           <RootNavigation />
           {children}
-          <Footer>
-            <FooterContact />
-          </Footer>
+          <Footer hasContact />
         </div>
       </body>
     </html>

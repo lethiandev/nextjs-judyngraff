@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ReactNode } from 'react'
+import FooterContact from './FooterContact'
 
 import logoImage from '../../public/logo.svg'
 
-const Footer = ({ children }: { children?: ReactNode }) => (
+const Footer = ({ hasContact = false }) => (
   <footer className="rounded-t-[4rem] bg-surface-light text-on-surface-light">
-    {children}
+    {hasContact ? <FooterContact /> : null}
     <section className="rounded-t-[4rem] bg-surface px-16 py-[6rem] text-on-surface">
       <div className="grid grid-cols-4 gap-16">
         <div className="col-span-2 flex flex-col gap-8">
