@@ -8,7 +8,7 @@ const PortfolioPage = () => (
         My <span>Portfolio</span>
       </Heading>
       <p className="text-center">
-        Explore my diverse graphic design portfolio – creativity in every pixel.
+        Explore my diverse graphic design portfolio - creativity in every pixel.
         <br />
         Get inspired or let&apos;s collaborate!
       </p>
