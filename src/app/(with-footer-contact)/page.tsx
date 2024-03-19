@@ -1,12 +1,13 @@
 import Avatar from '@/components/Avatar'
+import Button from '@/components/Button'
 import Heading from '@/components/Heading'
 import Highlight from '@/components/Highlight'
 import Section from '@/components/Section'
 import SectionHeader from '@/components/SectionHeader'
 import { ExperienceTimeline } from '@/features/experience'
-import { PortfolioSection } from '@/features/portfolio'
 import { Services } from '@/features/services'
 import { Testimonials } from '@/features/testimonials'
+import Portfolio from '@/portfolio/Portfolio'
 import Image from 'next/image'
 
 export default function Home() {
@@ -24,7 +25,14 @@ export default function Home() {
         <SectionHeader heading={<Highlight>Education And Experience</Highlight>} />
         <ExperienceTimeline />
       </Section>
-      <PortfolioSection />
+      <Section variant="surface-light">
+        <SectionHeader heading={<Highlight>My Portfolio</Highlight>} hr>
+          <div className="flex justify-end">
+            <Button type="button">See More</Button>
+          </div>
+        </SectionHeader>
+        <Portfolio featuredOnly />
+      </Section>
       <Testimonials />
     </div>
   )
