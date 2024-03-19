@@ -21,7 +21,7 @@ const wrapTimelineContent = (segment: TimelineContent, index: number, arr: any[]
   const isLast = index === arr.length - 1
 
   return (
-    <article className="grid grid-cols-3 gap-4 md:grid-cols-5">
+    <article key={index} className="grid grid-cols-3 gap-4 md:grid-cols-5">
       <div className="row-span-2 flex justify-center md:row-span-1">
         <TimelineSegment isCurrent={isFirst} isEnd={isLast} />
       </div>
