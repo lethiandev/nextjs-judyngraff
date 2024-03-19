@@ -6,8 +6,8 @@ import Section from '@/components/Section'
 import SectionHeader from '@/components/SectionHeader'
 import { ExperienceTimeline } from '@/features/experience'
 import { Services } from '@/features/services'
-import { Testimonials } from '@/features/testimonials'
 import Portfolio from '@/portfolio/Portfolio'
+import Testimonial from '@/testimonial/Testimonial'
 import Image from 'next/image'
 
 export default function Home() {
@@ -33,7 +33,13 @@ export default function Home() {
         </SectionHeader>
         <Portfolio featuredOnly />
       </Section>
-      <Testimonials />
+      <Section variant="background">
+        <SectionHeader heading={<Highlight>Client Testimonials</Highlight>}>
+          Satisfied customer references underscore the success of our collaborations, endorsing my
+          value and commitment to <span>exceptional results.</span>
+        </SectionHeader>
+        <Testimonial />
+      </Section>
     </div>
   )
 }
