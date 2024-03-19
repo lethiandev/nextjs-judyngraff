@@ -1,5 +1,3 @@
-import Footer from '@/partials/Footer'
-import FooterContact from '@/partials/FooterContact'
 import RootNavigation from '@/partials/RootNavigation'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
@@ -23,7 +21,6 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         <div className="mx-auto max-w-[1440px] px-16">
           <RootNavigation />
           {children}
-          <Footer hasContact />
         </div>
       </body>
     </html>
