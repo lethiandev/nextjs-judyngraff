@@ -1,10 +1,11 @@
-import { ReactNode } from 'react'
-import FooterLayout from '../(with-footer)/layout'
+import React, { ReactNode } from 'react'
+import Footer from '@/partials/Footer'
 
-export type FooterContactLayoutProps = {
-  children?: ReactNode
-}
-
-export default function FooterContactLayout({ children }: FooterContactLayoutProps) {
-  return <FooterLayout hasContact>{children}</FooterLayout>
+export default function FooterContactLayout({ children }: { children?: ReactNode }) {
+  return (
+    <React.Fragment>
+      {children}
+      <Footer hasContact={true} />
+    </React.Fragment>
+  )
 }
