@@ -13,11 +13,10 @@ export const metadata: Metadata = {
 }
 
 export type RootLayoutProps = {
-  modal: React.ReactNode
   children: React.ReactNode
 }
 
-const RootLayout = ({ modal, children }: RootLayoutProps) => {
+const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
       <body className={`min-h-screen ${poppins.className}`}>
@@ -28,7 +27,6 @@ const RootLayout = ({ modal, children }: RootLayoutProps) => {
             <FooterContact />
           </Footer>
         </div>
-        {modal}
       </body>
     </html>
   )
