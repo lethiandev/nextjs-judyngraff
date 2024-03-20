@@ -26,7 +26,7 @@ export default function Home() {
         <Experience />
       </Section>
       <Section variant="surface-light">
-        <SectionHeader heading={<Highlight>My Portfolio</Highlight>} hr>
+        <SectionHeader heading={<Highlight>My Portfolio</Highlight>} singleLine hr>
           <div className="flex justify-end">
             <Button type="button">See More</Button>
           </div>
