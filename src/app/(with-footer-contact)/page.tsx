@@ -4,7 +4,7 @@ import Heading from '@/components/Heading'
 import Highlight from '@/components/Highlight'
 import Section from '@/components/Section'
 import SectionHeader from '@/components/SectionHeader'
-import { ExperienceTimeline } from '@/features/experience'
+import Experience from '@/experience/Experience'
 import Portfolio from '@/portfolio/Portfolio'
 import Service from '@/service/Service'
 import Testimonial from '@/testimonial/Testimonial'
@@ -23,7 +23,7 @@ export default function Home() {
       </Section>
       <Section variant="background">
         <SectionHeader heading={<Highlight>Education And Experience</Highlight>} />
-        <ExperienceTimeline />
+        <Experience />
       </Section>
       <Section variant="surface-light">
         <SectionHeader heading={<Highlight>My Portfolio</Highlight>} hr>
