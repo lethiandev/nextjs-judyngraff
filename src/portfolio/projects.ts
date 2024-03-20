@@ -1,7 +1,8 @@
 import requireProject from './projects/index'
 
 export function withProjects() {
-  return requireProject.keys().map(key => ({
+  const orderedProjects = requireProject.keys().sort()
+  return orderedProjects.map(key => ({
     slug: projectSlugFrom(key)!,
     ...requireProject(key),
   }))
@@ -14,7 +15,8 @@ export function withProject(slug: string) {
 
 // Useful for dynamic props on static mode
 export function withProjectSlugs() {
-  return requireProject.keys().map(projectSlugFrom)
+  const orderedProjects = requireProject.keys().sort()
+  return orderedProjects.map(projectSlugFrom)
 }
 
 function projectSlugFrom(key: string): string | null {

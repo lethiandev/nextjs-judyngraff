@@ -1,5 +1,6 @@
 import requireTestimonial from './testimonials/index'
 
 export function withTestimonials() {
-  return requireTestimonial.keys().map(requireTestimonial)
+  const orderedTestimonials = requireTestimonial.keys().sort()
+  return orderedTestimonials.map(requireTestimonial)
 }
