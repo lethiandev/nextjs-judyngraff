@@ -20,7 +20,7 @@ export default function Portfolio({ category, featuredOnly = false }: PortfolioP
   }
 
   return (
-    <div className="grid gap-8 md:grid-cols-3">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8">
       {projects.map(({ slug, metadata }) => (
         <PortfolioCard key={slug} name={metadata!.title!} imageSrc={metadata!.imageSrc!} />
       ))}
