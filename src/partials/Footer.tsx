@@ -3,11 +3,12 @@ import Link from 'next/link'
 import FooterContact from './FooterContact'
 
 import logoImage from '../../public/logo.svg'
+import Section from '@/components/Section'
 
 const Footer = ({ hasContact = false }) => (
   <footer className="rounded-t-[4rem] bg-surface-light text-on-surface-light">
     {hasContact ? <FooterContact /> : null}
-    <section className="rounded-t-[4rem] bg-surface px-16 py-[6rem] text-on-surface">
+    <Section className="rounded-b-none">
       <div className="grid grid-cols-4 gap-16">
         <div className="col-span-2 flex flex-col gap-8">
           <Image src={logoImage} alt="Judyn Graff Logo" />
@@ -25,7 +26,7 @@ const Footer = ({ hasContact = false }) => (
         </div>
         <div className="col-span-1"></div>
       </div>
-    </section>
+    </Section>
   </footer>
 )
 

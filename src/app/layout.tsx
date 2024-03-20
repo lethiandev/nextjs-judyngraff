@@ -18,7 +18,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
       <body className={`min-h-screen ${poppins.className}`}>
-        <div className="mx-auto max-w-[1440px] px-16">
+        <div className="mx-auto max-w-[1440px] px-0 md:px-16">
           <RootNavigation />
           {children}
         </div>
