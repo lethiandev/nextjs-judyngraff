@@ -5,8 +5,8 @@ import Highlight from '@/components/Highlight'
 import Section from '@/components/Section'
 import SectionHeader from '@/components/SectionHeader'
 import { ExperienceTimeline } from '@/features/experience'
-import { Services } from '@/features/services'
 import Portfolio from '@/portfolio/Portfolio'
+import Service from '@/service/Service'
 import Testimonial from '@/testimonial/Testimonial'
 import Image from 'next/image'
 
@@ -15,11 +15,11 @@ export default function Home() {
     <div className="flex flex-col">
       <HomeTitle />
       <Section variant="surface">
-        <SectionHeader heading={<Highlight>My Portfolio</Highlight>} hr>
+        <SectionHeader heading={<Highlight>My Services</Highlight>} hr>
           Below are some of my services, to see all the services available,{' '}
           <span className="text-primary">please visit the services section.</span>
         </SectionHeader>
-        <Services />
+        <Service />
       </Section>
       <Section variant="background">
         <SectionHeader heading={<Highlight>Education And Experience</Highlight>} />
