@@ -15,7 +15,7 @@ export default function Section({ as: Wrapper = 'section', ...props }: SectionPr
 
 function selectVariant(variant: SectionVariant) {
   const className = {
-    base: 'px-16 py-[6rem] rounded-[4rem]',
+    base: 'py-16 px-8 rounded-[4rem] md:px-16 md:py-[6rem]',
     primary: 'bg-primary text-on-primary',
     surface: 'bg-surface text-on-surface',
     'surface-light': 'bg-surface-light text-on-surface-light',
