@@ -77,7 +77,7 @@ const AboutPage = () => (
             Why Choose <span>Me</span>?
           </Heading>
         </header>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-3 gap-4 md:gap-8">
           <ChooseMeCard iconUrl={iconBackpack} heading="Experience">
             With 8 years in the field, I bring a wealth of knowledge and expertise to every project.
           </ChooseMeCard>
